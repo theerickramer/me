@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Kurt";
+  src: url("../fonts/Kurt-Regular.otf") format("opentype");
+}
+
+html, body {
+  --green: #9EF100;
+  --purple: #7901bb;
+  --pink: #d80076;
+  --yellow: #ffff00;
+  --blue: #00dfcf;
+  --orange: #ff6f00;
+  --white: #ffffff;
+  --black: #000000;
+  font-family: "Kurt";
+  text-align: center;
+  background: var(--purple);
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 6rem;
+  color: var(--green); 
+}
+
+.angled {
+  display: block;
+  align-self: center;
+  margin: 0 auto;
+  transform: rotate(-16deg);
+}
+
+svg {
+  display: block;
+  fill: var(--green);
+}
