@@ -22,16 +22,20 @@ html, body {
 h1 {
   font-size: 6rem;
   color: var(--green); 
+  margin: 0;
 }
 
 .angled {
   display: block;
   align-self: center;
   margin: 0 auto;
-  transform: rotate(-16deg);
+  transform: rotate(-10deg);
 }
 
 svg {
   display: block;
   fill: var(--green);
+  margin: 0 auto;
+  width: 250px;
+  height: 50px;
 }
