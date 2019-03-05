@@ -1,10 +1,11 @@
 @font-face {
-  font-family: "Kurt";
-  src: url("../fonts/Kurt-Regular.otf") format("opentype");
+  font-family: 'Kurt';
+  src: url('../fonts/Kurt-Regular.otf') format('opentype');
 }
 
-html, body {
-  --green: #9EF100;
+html,
+body {
+  --green: #9ef100;
   --purple: #7901bb;
   --pink: #d80076;
   --yellow: #ffff00;
@@ -12,16 +13,17 @@ html, body {
   --orange: #ff6f00;
   --white: #ffffff;
   --black: #000000;
-  font-family: "Kurt";
+  font-family: 'Kurt';
   text-align: center;
-  background: var(--purple);
   height: 100%;
   width: 100%;
+  position: relative;
+  margin: 0;
 }
 
 h1 {
   font-size: 6rem;
-  color: var(--green); 
+  color: var(--green);
   margin: 0;
 }
 
@@ -33,9 +35,48 @@ h1 {
 }
 
 svg {
+  position: relative;
   display: block;
   fill: var(--green);
   margin: 0 auto;
   width: 250px;
   height: 50px;
+  z-index: 0;
+}
+
+#background-vid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+  z-index: -3;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(var(--purple), var(--blue));
+  opacity: 0.6;
+  z-index: -2;
+}
+
+.vignette {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(transparent, black);
+  z-index: -1;
 }
